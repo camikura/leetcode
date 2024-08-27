@@ -4,5 +4,13 @@
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true
   },
-  "go.formatFlags": ["-w"]
+  "go.formatFlags": [
+    "-w"
+  ],
+  "files.associations": {
+    "*.ejs": "html",
+    "*.pm": "perl",
+    "unordered_map": "cpp",
+    "map": "cpp"
+  }
 }
