@@ -4,5 +4,7 @@
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true
   },
-  "go.formatFlags": ["-w"]
+  "go.formatFlags": [
+    "-w"
+  ]
 }
