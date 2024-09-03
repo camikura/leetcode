@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - ci
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build
+
+    - name: Make
+      working-directory: ${{github.workspace}}/build
+      run: make
+
+    - name: Test
+      working-directory: ${{github.workspace}}/build
+      run: ./run_tests
