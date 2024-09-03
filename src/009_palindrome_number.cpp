@@ -4,6 +4,8 @@
  * [9] Palindrome Number
  */
 
+#include <gtest/gtest.h>
+
 // @lc code=start
 class Solution {
  public:
@@ -24,3 +26,15 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p009_palindrome_number, case1) {
+  EXPECT_EQ(true, Solution().isPalindrome(121));
+}
+
+TEST(p009_palindrome_number, case2) {
+  EXPECT_EQ(false, Solution().isPalindrome(-121));
+}
+
+TEST(p009_palindrome_number, case3) {
+  EXPECT_EQ(false, Solution().isPalindrome(10));
+}

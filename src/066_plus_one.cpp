@@ -4,13 +4,10 @@
  * [66] Plus One
  */
 
-#ifndef LEETCODE_H
-#define LEETCODE_H
-
 #include <vector>
-using namespace std;
+#include <gtest/gtest.h>
 
-#endif
+using namespace std;
 
 // @lc code=start
 class Solution {
@@ -37,3 +34,21 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p066_plus_one, case1) {
+  vector<int> nums{1, 2, 3};
+  vector<int> result{1, 2, 4};
+  EXPECT_EQ(result, Solution().plusOne(nums));
+}
+
+TEST(p066_plus_one, case2) {
+  vector<int> nums{4, 3, 2, 1};
+  vector<int> result{4, 3, 2, 2};
+  EXPECT_EQ(result, Solution().plusOne(nums));
+}
+
+TEST(p066_plus_one, case3) {
+  vector<int> nums{9};
+  vector<int> result{1, 0};
+  EXPECT_EQ(result, Solution().plusOne(nums));
+}

@@ -31,23 +31,20 @@ class Solution {
 };
 // @lc code=end
 
-TEST(two_sum, case1) {
+TEST(p001_two_sum, case1) {
   vector<int> nums{2, 7, 11, 15};
   vector<int> result{0, 1};
-  int target = 9;
-  EXPECT_EQ(result, Solution().twoSum(nums, target));
+  EXPECT_EQ(result, Solution().twoSum(nums, 9));
 }
 
-TEST(two_sum, case2) {
+TEST(p001_two_sum, case2) {
   vector<int> nums{3, 2, 4};
   vector<int> result{1, 2};
-  int target = 6;
-  EXPECT_EQ(result, Solution().twoSum(nums, target));
+  EXPECT_EQ(result, Solution().twoSum(nums, 6));
 }
 
-TEST(two_sum, case3) {
+TEST(p001_two_sum, case3) {
   vector<int> nums{3, 3};
   vector<int> result{0, 1};
-  int target = 6;
-  EXPECT_EQ(result, Solution().twoSum(nums, target));
+  EXPECT_EQ(result, Solution().twoSum(nums, 6));
 }

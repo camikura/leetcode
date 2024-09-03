@@ -2,9 +2,18 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "cmake",
+      "type": "shell",
+      "command": "cmake ..",
+      "options": {
+        "cwd": "${workspaceFolder}/build"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "run_tests",
       "type": "shell",
-      "command": "cmake .. && make && ./run_tests",
+      "command": "make && ./run_tests",
       "options": {
         "cwd": "${workspaceFolder}/build"
       },

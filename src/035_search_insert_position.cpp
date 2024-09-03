@@ -4,13 +4,10 @@
  * [35] Search Insert Position
  */
 
-#ifndef LEETCODE_H
-#define LEETCODE_H
-
 #include <vector>
-using namespace std;
+#include <gtest/gtest.h>
 
-#endif
+using namespace std;
 
 // @lc code=start
 class Solution {
@@ -28,3 +25,18 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p035_search_insert_position, case1) {
+  vector<int> nums{1, 3, 5, 6};
+  EXPECT_EQ(2, Solution().searchInsert(nums, 5));
+}
+
+TEST(p035_search_insert_position, case2) {
+  vector<int> nums{1, 3, 5, 6};
+  EXPECT_EQ(1, Solution().searchInsert(nums, 2));
+}
+
+TEST(p035_search_insert_position, case3) {
+  vector<int> nums{1, 3, 5, 6};
+  EXPECT_EQ(4, Solution().searchInsert(nums, 7));
+}
