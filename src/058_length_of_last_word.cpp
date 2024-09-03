@@ -4,13 +4,10 @@
  * [58] Length of Last Word
  */
 
-#ifndef LEETCODE_H
-#define LEETCODE_H
-
 #include <string>
-using namespace std;
+#include <gtest/gtest.h>
 
-#endif
+using namespace std;
 
 // @lc code=start
 class Solution {
@@ -34,3 +31,15 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p058_length_of_last_word, case1) {
+  EXPECT_EQ(5, Solution().lengthOfLastWord("Hello World"));
+}
+
+TEST(p058_length_of_last_word, case2) {
+  EXPECT_EQ(4, Solution().lengthOfLastWord("   fly me   to   the moon  "));
+}
+
+TEST(p058_length_of_last_word, case3) {
+  EXPECT_EQ(6, Solution().lengthOfLastWord("luffy is still joyboy"));
+}

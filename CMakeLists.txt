@@ -16,6 +16,10 @@ add_executable(run_tests
   src/021_merge_two_sorted_lists.cpp
   src/026_remove_duplicates_from_sorted_array.cpp
   src/027_remove_element.cpp
+  src/028_find_the_index_of_the_first_occurrence_in_a_string.cpp
+  src/035_search_insert_position.cpp
+  src/058_length_of_last_word.cpp
+  src/066_plus_one.cpp
   src/067_add_binary.cpp
   src/069_sqrt_x.cpp
 )
