@@ -7,6 +7,7 @@
 #include <map>
 #include <string>
 #include <stack>
+#include <gtest/gtest.h>
 
 // @lc code=start
 class Solution {
@@ -35,3 +36,19 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p020_valid_parentheses, case1) {
+  EXPECT_EQ(true, Solution().isValid("()"));
+}
+
+TEST(p020_valid_parentheses, case2) {
+  EXPECT_EQ(true, Solution().isValid("()[]{}"));
+}
+
+TEST(p020_valid_parentheses, case3) {
+  EXPECT_EQ(false, Solution().isValid("(]"));
+}
+
+TEST(p020_valid_parentheses, case4) {
+  EXPECT_EQ(true, Solution().isValid("([])"));
+}

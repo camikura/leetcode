@@ -6,6 +6,7 @@
 
 #include <map>
 #include <string>
+#include <gtest/gtest.h>
 
 // @lc code=start
 class Solution {
@@ -28,3 +29,15 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p013_roman_to_integer, case1) {
+  EXPECT_EQ(3, Solution().romanToInt("III"));
+}
+
+TEST(p013_roman_to_integer, case2) {
+  EXPECT_EQ(58, Solution().romanToInt("LVIII"));
+}
+
+TEST(p013_roman_to_integer, case3) {
+  EXPECT_EQ(1994, Solution().romanToInt("MCMXCIV"));
+}

@@ -4,13 +4,10 @@
  * [27] Remove Element
  */
 
-#ifndef LEETCODE_H
-#define LEETCODE_H
-
 #include <vector>
-using namespace std;
+#include <gtest/gtest.h>
 
-#endif
+using namespace std;
 
 // @lc code=start
 class Solution {
@@ -26,3 +23,22 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p027_remove_element, case1) {
+  vector<int> nums{3, 2, 2, 3};
+  EXPECT_EQ(2, Solution().removeElement(nums, 3));
+
+  EXPECT_EQ(2, nums[0]);
+  EXPECT_EQ(2, nums[1]);
+}
+
+TEST(p027_remove_element, case2) {
+  vector<int> nums{0, 1, 2, 2, 3, 0, 4, 2};
+  EXPECT_EQ(5, Solution().removeElement(nums, 2));
+
+  EXPECT_EQ(0, nums[0]);
+  EXPECT_EQ(1, nums[1]);
+  EXPECT_EQ(3, nums[2]);
+  EXPECT_EQ(0, nums[3]);
+  EXPECT_EQ(4, nums[4]);
+}

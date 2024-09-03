@@ -4,13 +4,10 @@
  * [67] Add Binary
  */
 
-#ifndef LEETCODE_H
-#define LEETCODE_H
-
 #include <string>
-using namespace std;
+#include <gtest/gtest.h>
 
-#endif
+using namespace std;
 
 // @lc code=start
 class Solution {
@@ -34,3 +31,7 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p067_add_binary, case1) {
+  EXPECT_EQ("100", Solution().addBinary("11", "1"));
+}

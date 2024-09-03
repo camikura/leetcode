@@ -6,12 +6,15 @@
 
 #include <string>
 #include <vector>
+#include <gtest/gtest.h>
+
+using namespace std;
 
 // @lc code=start
 class Solution {
  public:
-  std::string longestCommonPrefix(std::vector<std::string>& strs) {
-    std::string prefix = strs[0];
+  string longestCommonPrefix(vector<string>& strs) {
+    string prefix = strs[0];
     for (int i = 1; i < strs.size(); i++) {
       while (strs[i].find(prefix) != 0) {
         prefix = prefix.substr(0, prefix.length() - 1);
@@ -22,3 +25,13 @@ class Solution {
   }
 };
 // @lc code=end
+
+TEST(p014_longest_common_prefix, case1) {
+  vector<string> strs{"flower", "flow", "flight"};
+  EXPECT_EQ("fl", Solution().longestCommonPrefix(strs));
+}
+
+TEST(p014_longest_common_prefix, case2) {
+  vector<string> strs{"dog", "racecar", "car"};
+  EXPECT_EQ("", Solution().longestCommonPrefix(strs));
+}
