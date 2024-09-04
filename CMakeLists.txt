@@ -22,6 +22,7 @@ add_executable(run_tests
   src/066_plus_one.cc
   src/067_add_binary.cc
   src/069_sqrt_x.cc
+  src/070_climbing_stairs.cc
 )
 
 target_link_libraries(run_tests gtest gtest_main pthread)
