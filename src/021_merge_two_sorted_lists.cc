@@ -6,19 +6,8 @@
 
 // @lc code=start
 
-#include <gtest/gtest.h>
-
-#ifndef LISTNODE_H
-#define LISTNODE_H
-
-struct ListNode {
-  int val;
-  ListNode* next;
-  ListNode() : val(0), next(nullptr) {}
-  ListNode(int x) : val(x), next(nullptr) {}
-  ListNode(int x, ListNode* next) : val(x), next(next) {}
-};
-
+#ifdef NOT_LEETCODE
+#include <leetcode.h>
 #endif
 
 class Solution {
@@ -66,6 +55,7 @@ class Solution {
 };
 // @lc code=end
 
+#ifdef NOT_LEETCODE
 TEST(p021_merge_two_sorted_lists, case1) {
   ListNode* list1 = Solution().createList({1, 2, 4});
   ListNode* list2 = Solution().createList({1, 3, 4});
@@ -95,3 +85,4 @@ TEST(p021_merge_two_sorted_lists, case3) {
 
   EXPECT_TRUE(Solution().areListsEqual(result, mergedList));
 }
+#endif
