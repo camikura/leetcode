@@ -8,20 +8,20 @@ link_directories(/opt/homebrew/lib)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(run_tests
-  src/001_two_sum.cpp
-  src/009_palindrome_number.cpp
-  src/013_roman_to_integer.cpp
-  src/014_longest_common_prefix.cpp
-  src/020_valid_parentheses.cpp
-  src/021_merge_two_sorted_lists.cpp
-  src/026_remove_duplicates_from_sorted_array.cpp
-  src/027_remove_element.cpp
-  src/028_find_the_index_of_the_first_occurrence_in_a_string.cpp
-  src/035_search_insert_position.cpp
-  src/058_length_of_last_word.cpp
-  src/066_plus_one.cpp
-  src/067_add_binary.cpp
-  src/069_sqrt_x.cpp
+  src/001_two_sum.cc
+  src/009_palindrome_number.cc
+  src/013_roman_to_integer.cc
+  src/014_longest_common_prefix.cc
+  src/020_valid_parentheses.cc
+  src/021_merge_two_sorted_lists.cc
+  src/026_remove_duplicates_from_sorted_array.cc
+  src/027_remove_element.cc
+  src/028_find_the_index_of_the_first_occurrence_in_a_string.cc
+  src/035_search_insert_position.cc
+  src/058_length_of_last_word.cc
+  src/066_plus_one.cc
+  src/067_add_binary.cc
+  src/069_sqrt_x.cc
 )
 
 target_link_libraries(run_tests gtest gtest_main pthread)
