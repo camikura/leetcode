@@ -5,9 +5,10 @@ project(tests)
 include_directories(include /opt/homebrew/include)
 link_directories(/opt/homebrew/lib)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 add_executable(run_tests
+  # easy
   src/001_two_sum.cc
   src/009_palindrome_number.cc
   src/013_roman_to_integer.cc
@@ -26,6 +27,9 @@ add_executable(run_tests
   src/083_remove_duplicates_from_sorted_list.cc
   src/088_merge_sorted_array.cc
   src/094_binary_tree_inorder_traversal.cc
+
+  # midium
+  src/002_add_two_numbers.cc
 )
 
 add_definitions(-DNOT_LEETCODE)
