@@ -25,6 +25,7 @@ add_executable(run_tests
   src/070_climbing_stairs.cc
   src/083_remove_duplicates_from_sorted_list.cc
   src/088_merge_sorted_array.cc
+  src/094_binary_tree_inorder_traversal.cc
 )
 
 add_definitions(-DNOT_LEETCODE)
