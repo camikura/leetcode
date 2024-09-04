@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - .github/workflows/ci.yml
       - src/**
       - CMakeLists.txt
 
