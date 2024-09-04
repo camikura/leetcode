@@ -4,10 +4,9 @@
  * [26] Remove Duplicates from Sorted Array
  */
 
-#include <vector>
-#include <gtest/gtest.h>
-
-using namespace std;
+#ifdef NOT_LEETCODE
+#include <leetcode.h>
+#endif
 
 // @lc code=start
 class Solution {
@@ -26,6 +25,7 @@ class Solution {
 };
 // @lc code=end
 
+#ifdef NOT_LEETCODE
 TEST(p026_remove_duplicates_from_sorted_array, case1) {
   vector<int> nums{1, 1, 2};
   EXPECT_EQ(2, Solution().removeDuplicates(nums));
@@ -44,3 +44,4 @@ TEST(p026_remove_duplicates_from_sorted_array, case2) {
   EXPECT_EQ(3, nums[3]);
   EXPECT_EQ(4, nums[4]);
 }
+#endif

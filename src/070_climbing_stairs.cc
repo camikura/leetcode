@@ -4,7 +4,9 @@
  * [70] Climbing Stairs
  */
 
-#include <gtest/gtest.h>
+#ifdef NOT_LEETCODE
+#include <leetcode.h>
+#endif
 
 // @lc code=start
 class Solution {
@@ -26,7 +28,9 @@ class Solution {
 };
 // @lc code=end
 
+#ifdef NOT_LEETCODE
 TEST(p070_climbing_stairs, case1) { EXPECT_EQ(2, Solution().climbStairs(2)); }
 TEST(p070_climbing_stairs, case2) { EXPECT_EQ(3, Solution().climbStairs(3)); }
 TEST(p070_climbing_stairs, case3) { EXPECT_EQ(5, Solution().climbStairs(4)); }
 TEST(p070_climbing_stairs, case4) { EXPECT_EQ(8, Solution().climbStairs(5)); }
+#endif

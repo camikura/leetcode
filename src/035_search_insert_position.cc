@@ -4,10 +4,9 @@
  * [35] Search Insert Position
  */
 
-#include <vector>
-#include <gtest/gtest.h>
-
-using namespace std;
+#ifdef NOT_LEETCODE
+#include <leetcode.h>
+#endif
 
 // @lc code=start
 class Solution {
@@ -26,6 +25,7 @@ class Solution {
 };
 // @lc code=end
 
+#ifdef NOT_LEETCODE
 TEST(p035_search_insert_position, case1) {
   vector<int> nums{1, 3, 5, 6};
   EXPECT_EQ(2, Solution().searchInsert(nums, 5));
@@ -40,3 +40,4 @@ TEST(p035_search_insert_position, case3) {
   vector<int> nums{1, 3, 5, 6};
   EXPECT_EQ(4, Solution().searchInsert(nums, 7));
 }
+#endif

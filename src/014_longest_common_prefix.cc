@@ -4,11 +4,9 @@
  * [14] Longest Common Prefix
  */
 
-#include <string>
-#include <vector>
-#include <gtest/gtest.h>
-
-using namespace std;
+#ifdef NOT_LEETCODE
+#include <leetcode.h>
+#endif
 
 // @lc code=start
 class Solution {
@@ -26,6 +24,7 @@ class Solution {
 };
 // @lc code=end
 
+#ifdef NOT_LEETCODE
 TEST(p014_longest_common_prefix, case1) {
   vector<string> strs{"flower", "flow", "flight"};
   EXPECT_EQ("fl", Solution().longestCommonPrefix(strs));
@@ -35,3 +34,4 @@ TEST(p014_longest_common_prefix, case2) {
   vector<string> strs{"dog", "racecar", "car"};
   EXPECT_EQ("", Solution().longestCommonPrefix(strs));
 }
+#endif

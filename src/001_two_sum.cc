@@ -4,11 +4,9 @@
  * [1] Two Sum
  */
 
-#include <vector>
-#include <map>
-#include <gtest/gtest.h>
-
-using namespace std;
+#ifdef NOT_LEETCODE
+#include <leetcode.h>
+#endif
 
 // @lc code=start
 class Solution {
@@ -31,6 +29,7 @@ class Solution {
 };
 // @lc code=end
 
+#ifdef NOT_LEETCODE
 TEST(p001_two_sum, case1) {
   vector<int> nums{2, 7, 11, 15};
   vector<int> result{0, 1};
@@ -48,3 +47,4 @@ TEST(p001_two_sum, case3) {
   vector<int> result{0, 1};
   EXPECT_EQ(result, Solution().twoSum(nums, 6));
 }
+#endif
