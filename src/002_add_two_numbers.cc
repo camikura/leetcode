@@ -47,6 +47,7 @@ class Solution {
     return head;
   }
 
+#ifdef NOT_LEETCODE
   ListNode* createList(initializer_list<int> vals) {
     ListNode* head = nullptr;
     ListNode* tail = nullptr;
@@ -73,6 +74,7 @@ class Solution {
 
     return l1 == nullptr && l2 == nullptr;
   }
+#endif
 };
 // @lc code=end
 

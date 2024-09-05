@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.30)
 
-project(tests)
+project(leetcode)
 
 include_directories(include /opt/homebrew/include)
 link_directories(/opt/homebrew/lib)
@@ -35,3 +35,7 @@ add_executable(run_tests
 add_definitions(-DNOT_LEETCODE)
 
 target_link_libraries(run_tests gtest gtest_main pthread)
+
+# tests
+add_test(NAME run_tests COMMAND run_tests)
+enable_testing()
