@@ -3,6 +3,6 @@
 set -eu
 
 cmake -B build && cd build
-cmake .. -DNOT_LEETCODE
+cmake ..
 cmake --build .
 ctest --verbose
