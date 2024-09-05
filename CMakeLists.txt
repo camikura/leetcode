@@ -36,4 +36,6 @@ add_definitions(-DNOT_LEETCODE)
 
 target_link_libraries(run_tests gtest gtest_main pthread)
 
+# tests
 add_test(NAME run_tests COMMAND run_tests)
+enable_testing()
