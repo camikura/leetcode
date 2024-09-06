@@ -1,5 +1,7 @@
 {
   "recommendations": [
     "LeetCode.vscode-leetcode",
+    "ms-vscode.cpptools",
+    "esbenp.prettier-vscode"
   ]
 }
