@@ -24,8 +24,10 @@ class Solution {
       if (it == b.end()) {
         st.push(s[i]);
       } else {
-        if (st.empty()) return false;
-        if (b[s[i]] != st.top()) return false;
+        if (st.empty())
+          return false;
+        if (b[s[i]] != st.top())
+          return false;
 
         st.pop();
       }

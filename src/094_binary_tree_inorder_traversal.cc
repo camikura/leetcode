@@ -30,7 +30,8 @@ class Solution {
   }
 
   TreeNode* createTree(const vector<int>& values) {
-    if (values.empty() || values[0] == -1) return nullptr;
+    if (values.empty() || values[0] == -1)
+      return nullptr;
 
     TreeNode* root = new TreeNode(values[0]);
     queue<TreeNode*> q;

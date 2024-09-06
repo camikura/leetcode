@@ -12,8 +12,10 @@
 class Solution {
  public:
   int climbStairs(int n) {
-    if (n == 1) return 1;
-    if (n == 2) return 2;
+    if (n == 1)
+      return 1;
+    if (n == 2)
+      return 2;
 
     int prev1 = 2, prev2 = 1;
 
@@ -29,8 +31,19 @@ class Solution {
 // @lc code=end
 
 #ifdef NOT_LEETCODE
-TEST(p070_climbing_stairs, case1) { EXPECT_EQ(2, Solution().climbStairs(2)); }
-TEST(p070_climbing_stairs, case2) { EXPECT_EQ(3, Solution().climbStairs(3)); }
-TEST(p070_climbing_stairs, case3) { EXPECT_EQ(5, Solution().climbStairs(4)); }
-TEST(p070_climbing_stairs, case4) { EXPECT_EQ(8, Solution().climbStairs(5)); }
+TEST(p070_climbing_stairs, case1) {
+  EXPECT_EQ(2, Solution().climbStairs(2));
+}
+
+TEST(p070_climbing_stairs, case2) {
+  EXPECT_EQ(3, Solution().climbStairs(3));
+}
+
+TEST(p070_climbing_stairs, case3) {
+  EXPECT_EQ(5, Solution().climbStairs(4));
+}
+
+TEST(p070_climbing_stairs, case4) {
+  EXPECT_EQ(8, Solution().climbStairs(5));
+}
 #endif

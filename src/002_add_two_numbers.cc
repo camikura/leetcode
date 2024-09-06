@@ -40,8 +40,10 @@ class Solution {
         tail = tail->next = new ListNode(val);
       }
 
-      if (l1) l1 = l1->next;
-      if (l2) l2 = l2->next;
+      if (l1)
+        l1 = l1->next;
+      if (l2)
+        l2 = l2->next;
     }
 
     return head;
@@ -68,8 +70,10 @@ class Solution {
       if (l1->val != l2->val) {
         return false;
       }
-      if (l1) l1 = l1->next;
-      if (l2) l2 = l2->next;
+      if (l1)
+        l1 = l1->next;
+      if (l2)
+        l2 = l2->next;
     }
 
     return l1 == nullptr && l2 == nullptr;
