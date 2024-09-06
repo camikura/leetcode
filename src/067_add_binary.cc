@@ -19,8 +19,10 @@ class Solution {
     int bi = b.length() - 1;
 
     while (ai >= 0 || bi >= 0 || carry) {
-      if (ai >= 0) carry += a[ai--] - '0';
-      if (bi >= 0) carry += b[bi--] - '0';
+      if (ai >= 0)
+        carry += a[ai--] - '0';
+      if (bi >= 0)
+        carry += b[bi--] - '0';
 
       res.insert(res.begin(), carry % 2 + '0');
       carry /= 2;

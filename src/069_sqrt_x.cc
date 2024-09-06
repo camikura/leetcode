@@ -27,7 +27,15 @@ class Solution {
 // @lc code=end
 
 #ifdef NOT_LEETCODE
-TEST(p069_sqrt_x, case1) { EXPECT_EQ(2, Solution().mySqrt(4)); }
-TEST(p069_sqrt_x, case2) { EXPECT_EQ(2, Solution().mySqrt(8)); }
-TEST(p069_sqrt_x, case3) { EXPECT_EQ(3, Solution().mySqrt(9)); }
+TEST(p069_sqrt_x, case1) {
+  EXPECT_EQ(2, Solution().mySqrt(4));
+}
+
+TEST(p069_sqrt_x, case2) {
+  EXPECT_EQ(2, Solution().mySqrt(8));
+}
+
+TEST(p069_sqrt_x, case3) {
+  EXPECT_EQ(3, Solution().mySqrt(9));
+}
 #endif

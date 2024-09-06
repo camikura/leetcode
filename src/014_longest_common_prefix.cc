@@ -16,7 +16,8 @@ class Solution {
     for (int i = 1; i < strs.size(); i++) {
       while (strs[i].find(prefix) != 0) {
         prefix = prefix.substr(0, prefix.length() - 1);
-        if (prefix.empty()) return "";
+        if (prefix.empty())
+          return "";
       }
     }
     return prefix;
