@@ -1,0 +1,33 @@
+name: Format Check
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/format-check.yml
+      - src/**
+
+jobs:
+  clang-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install clang-format
+        run: sudo apt-get install clang-format
+
+      - name: Run clang-format
+        run: clang-format ./src/*.cc -i
+
+      - name: Check for formatting changes
+        run: |
+          if [[ $(git status --porcelain) ]]; then
+            echo "Code is not formatted according to .clang-format. Please run clang-format."
+            git --no-pager diff
+            exit 1
+          else
+            echo "Code is properly formatted according to .clang-format."
+          fi
