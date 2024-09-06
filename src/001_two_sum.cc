@@ -24,7 +24,9 @@ class Solution {
       m[num] = i;
     }
 
-    return {};
+    return {
+      
+    };
   }
 };
 // @lc code=end

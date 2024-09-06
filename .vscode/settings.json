@@ -1,7 +1,7 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.suggest.insertMode": "replace",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   }
