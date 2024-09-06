@@ -13,3 +13,6 @@ CMakeUserPresets.json
 
 # build
 build/
+
+# vscode
+.vscode/settings.json
