@@ -4,9 +4,7 @@
  * [66] Plus One
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -34,7 +32,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p066_plus_one, case1) {
   vector<int> nums{1, 2, 3};
   vector<int> result{1, 2, 4};
@@ -52,4 +49,3 @@ TEST(p066_plus_one, case3) {
   vector<int> result{1, 0};
   EXPECT_EQ(result, Solution().plusOne(nums));
 }
-#endif

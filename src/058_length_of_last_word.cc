@@ -4,9 +4,7 @@
  * [58] Length of Last Word
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -31,7 +29,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p058_length_of_last_word, case1) {
   EXPECT_EQ(5, Solution().lengthOfLastWord("Hello World"));
 }
@@ -43,4 +40,3 @@ TEST(p058_length_of_last_word, case2) {
 TEST(p058_length_of_last_word, case3) {
   EXPECT_EQ(6, Solution().lengthOfLastWord("luffy is still joyboy"));
 }
-#endif

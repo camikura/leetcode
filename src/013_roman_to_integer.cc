@@ -4,9 +4,7 @@
  * [13] Roman to Integer
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -30,7 +28,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p013_roman_to_integer, case1) {
   EXPECT_EQ(3, Solution().romanToInt("III"));
 }
@@ -42,4 +39,3 @@ TEST(p013_roman_to_integer, case2) {
 TEST(p013_roman_to_integer, case3) {
   EXPECT_EQ(1994, Solution().romanToInt("MCMXCIV"));
 }
-#endif

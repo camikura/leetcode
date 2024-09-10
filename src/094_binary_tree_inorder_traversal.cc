@@ -4,9 +4,7 @@
  * [94] Binary Tree Inorder Traversal
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 /**
@@ -69,7 +67,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p094_merge_sorted_array, case1) {
   vector<int> rootValues{1, -1, 2, 3};
   vector<int> result{1, 3, 2};
@@ -97,4 +94,3 @@ TEST(p094_merge_sorted_array, case4) {
   auto root = Solution().createTree(rootValues);
   EXPECT_EQ(result, Solution().inorderTraversal(root));
 }
-#endif

@@ -4,9 +4,7 @@
  * [2] Add Two Numbers
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 /**
@@ -49,7 +47,6 @@ class Solution {
     return head;
   }
 
-#ifdef NOT_LEETCODE
   ListNode* createList(initializer_list<int> vals) {
     ListNode* head = nullptr;
     ListNode* tail = nullptr;
@@ -78,11 +75,9 @@ class Solution {
 
     return l1 == nullptr && l2 == nullptr;
   }
-#endif
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p002_add_two_numbers, case1) {
   ListNode* l1 = Solution().createList({2, 4, 3});
   ListNode* l2 = Solution().createList({5, 6, 4});
@@ -109,4 +104,3 @@ TEST(p002_add_two_numbers, case3) {
 
   EXPECT_TRUE(Solution().areListsEqual(result, output));
 }
-#endif
