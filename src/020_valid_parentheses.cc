@@ -4,9 +4,7 @@
  * [20] Valid Parentheses
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -38,7 +36,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p020_valid_parentheses, case1) {
   EXPECT_EQ(true, Solution().isValid("()"));
 }
@@ -54,4 +51,3 @@ TEST(p020_valid_parentheses, case3) {
 TEST(p020_valid_parentheses, case4) {
   EXPECT_EQ(true, Solution().isValid("([])"));
 }
-#endif

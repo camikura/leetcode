@@ -4,9 +4,7 @@
  * [88] Merge Sorted Array
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -21,7 +19,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p088_merge_sorted_array, case1) {
   vector<int> nums1{1, 2, 3, 0, 0, 0};
   vector<int> nums2{2, 5, 6};
@@ -45,4 +42,3 @@ TEST(p088_merge_sorted_array, case3) {
   Solution().merge(nums1, 0, nums2, 1);
   EXPECT_EQ(result, nums1);
 }
-#endif

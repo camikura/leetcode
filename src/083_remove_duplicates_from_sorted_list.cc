@@ -4,9 +4,7 @@
  * [83] Remove Duplicates from Sorted List
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 /**
@@ -69,7 +67,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p083_remove_duplicates_from_sorted_list, case1) {
   ListNode* head = Solution().createList({1, 1, 2});
   ListNode* result = Solution().createList({1, 2});
@@ -87,4 +84,3 @@ TEST(p083_remove_duplicates_from_sorted_list, case2) {
 
   EXPECT_TRUE(Solution().areListsEqual(result, uniqueSortedList));
 }
-#endif

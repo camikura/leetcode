@@ -4,9 +4,7 @@
  * [3] Longest Substring Without Repeating Characters
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -29,7 +27,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p003_longest_substring_without_repeating_characters, case1) {
   EXPECT_EQ(3, Solution().lengthOfLongestSubstring("abcabcbb"));
 }
@@ -41,4 +38,3 @@ TEST(p003_longest_substring_without_repeating_characters, case2) {
 TEST(p003_longest_substring_without_repeating_characters, case3) {
   EXPECT_EQ(3, Solution().lengthOfLongestSubstring("pwwkew"));
 }
-#endif

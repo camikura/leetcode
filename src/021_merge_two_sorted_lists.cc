@@ -6,9 +6,7 @@
 
 // @lc code=start
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 class Solution {
  public:
@@ -57,7 +55,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p021_merge_two_sorted_lists, case1) {
   ListNode* list1 = Solution().createList({1, 2, 4});
   ListNode* list2 = Solution().createList({1, 3, 4});
@@ -87,4 +84,3 @@ TEST(p021_merge_two_sorted_lists, case3) {
 
   EXPECT_TRUE(Solution().areListsEqual(result, mergedList));
 }
-#endif

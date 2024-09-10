@@ -4,9 +4,7 @@
  * [9] Palindrome Number
  */
 
-#ifdef NOT_LEETCODE
 #include <leetcode.h>
-#endif
 
 // @lc code=start
 class Solution {
@@ -29,7 +27,6 @@ class Solution {
 };
 // @lc code=end
 
-#ifdef NOT_LEETCODE
 TEST(p009_palindrome_number, case1) {
   EXPECT_EQ(true, Solution().isPalindrome(121));
 }
@@ -41,4 +38,3 @@ TEST(p009_palindrome_number, case2) {
 TEST(p009_palindrome_number, case3) {
   EXPECT_EQ(false, Solution().isPalindrome(10));
 }
-#endif
