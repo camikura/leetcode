@@ -31,6 +31,7 @@ add_executable(run_tests
   # midium
   src/002_add_two_numbers.cc
   src/003_longest_substring_without_repeating_characters.cc
+  src/005_longest_palindromic_substring.cc
 )
 
 add_definitions(-DNOT_LEETCODE)
