@@ -10,33 +10,33 @@
 class Solution {
  public:
   string longestPalindrome(string s) {
-    int index = 0, len = 0;
-    string word = "", res = "";
+    if (s.length() == 1)
+      return s;
 
-    while (index <= s.length()) {
-      len = res.length() + 1;
-      while (index + len <= s.length()) {
-        word = s.substr(index, len);
-        if (isPalindrome(word) && len > res.length()) {
-          res = word;
-        }
-        len++;
+    int index = 0;
+    string result = "";
+
+    while (index < s.length()) {
+      int len1 = findPalindrome(s, index, index);
+      int len2 = findPalindrome(s, index, index + 1);
+      int len = max(len1, len2);
+
+      if (len > (int)result.length()) {
+        result = s.substr(index - (len - 1) / 2, len);
       }
       index++;
     }
 
-    return res;
+    return result;
   }
 
-  bool isPalindrome(const string& s) {
-    int left = 0, right = s.length() - 1;
-    while (left < right) {
-      if (s[left] != s[right])
-        return false;
-      left++;
-      right--;
+  int findPalindrome(const string& s, int left, int right) {
+    while (left >= 0 && right < s.length() && s[left] == s[right]) {
+      left--;
+      right++;
     }
-    return true;
+
+    return right - left - 1;
   }
 };
 // @lc code=end
@@ -62,4 +62,9 @@ TEST(p005_longest_palindromic_substring, case3) {
       "linpfaigswquqfvabbzvestwxhbnfjhnvfhyxalchmtkcwnyyrbwjsoqooypwteozbivqiyl"
       "dpqlykxinmzkgnmfbobgjivlzubfen");
   EXPECT_EQ(result, "thht");
+}
+
+TEST(p005_longest_palindromic_substring, case4) {
+  auto result = Solution().longestPalindrome("bb");
+  EXPECT_EQ(result, "bb");
 }
