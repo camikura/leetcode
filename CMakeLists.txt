@@ -34,6 +34,7 @@ add_executable(run_tests
   src/005_longest_palindromic_substring.cc
   src/006_zigzag_conversion.cc
   src/007_reverse_integer.cc
+  src/008_string_to_integer_atoi.cc
 )
 
 add_definitions(-DNOT_LEETCODE)
