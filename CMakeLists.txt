@@ -32,6 +32,7 @@ add_executable(run_tests
   src/002_add_two_numbers.cc
   src/003_longest_substring_without_repeating_characters.cc
   src/005_longest_palindromic_substring.cc
+  src/006_zigzag_conversion.cc
 )
 
 add_definitions(-DNOT_LEETCODE)
