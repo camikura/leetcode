@@ -37,6 +37,7 @@ add_executable(run_tests
   src/008_string_to_integer_atoi.cc
   src/011_container_with_most_water.cc
   src/012_integer_to_roman.cc
+  src/012_integer_to_roman2.cc
 )
 
 target_link_libraries(run_tests gtest gtest_main pthread)
