@@ -9,12 +9,12 @@
 // @lc code=start
 class Solution {
  public:
-  std::vector<int> twoSum(std::vector<int>& nums, int target) {
-    std::map<int, int> m;
+  vector<int> twoSum(vector<int>& nums, int target) {
+    map<int, int> m;
 
     for (auto i = 0; i < nums.size(); i++) {
-      int num = nums[i];
-      int diff = target - num;
+      auto num = nums[i];
+      auto diff = target - num;
       auto it = m.find(diff);
       if (it != m.end()) {
         return {it->second, i};
