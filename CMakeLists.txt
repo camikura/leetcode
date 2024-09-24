@@ -36,6 +36,7 @@ add_executable(run_tests
   src/007_reverse_integer.cc
   src/008_string_to_integer_atoi.cc
   src/011_container_with_most_water.cc
+  src/012_integer_to_roman.cc
 )
 
 add_definitions(-DNOT_LEETCODE)
