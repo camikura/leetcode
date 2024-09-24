@@ -3,7 +3,7 @@
     {
       "name": "Mac",
       "includePath": ["include", "/opt/homebrew/include"],
-      "defines": ["NOT_LEETCODE"],
+      "defines": [],
       "compilerPath": "/usr/bin/clang",
       "cStandard": "c17",
       "cppStandard": "c++20",

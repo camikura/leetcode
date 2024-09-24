@@ -39,8 +39,6 @@ add_executable(run_tests
   src/012_integer_to_roman.cc
 )
 
-add_definitions(-DNOT_LEETCODE)
-
 target_link_libraries(run_tests gtest gtest_main pthread)
 
 # tests
